@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+#Adding a new contact
+curl -X POST -H "Content-Type: application/json" --data @postTesting1.json http://localhost:5000/db/9172178454
+curl -X POST -H "Content-Type: application/json" --data @postTesting2.json http://localhost:5000/db/2126970929
+
+#get the status of that contact
+curl http://localhost:5000/db/9172178454/2126970929
